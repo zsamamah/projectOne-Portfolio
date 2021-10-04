@@ -9,7 +9,6 @@ html {
 }
 body {
   margin: 0;
-  /* padding: 0 20px; */
   font-family: "Comfortaa", cursive;
 }
 .title {
@@ -41,7 +40,6 @@ body {
 .navElements {
   flex: 1;
   align-items: center;
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   width: max-content;
@@ -49,7 +47,6 @@ body {
 .navElements ul {
   display: flex;
   list-style: none;
-  /* column-gap: 20px; */
 }
 .navElements li {
   margin: 10px;
@@ -82,7 +79,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: right;
-  /* background-color: #baddff; */
   height: 100vh;
   display: flex;
   color: rgb(83, 81, 81);
@@ -103,6 +99,7 @@ body {
   border: none;
   margin-top: 10px;
   margin-left: 50px;
+  font-weight: bold;
 }
 .zaid_skills {
   padding: 20px;
@@ -130,10 +127,7 @@ body {
   transform: scale(1.01);
 }
 .skill_card i {
-  /* color: rgb(46, 37, 175); */
   color: #79b4b7;
-  /* color: rgb(241, 144, 144); */
-  /* color: #15aabf; */
 }
 .skill_card h2 {
   color: black;
@@ -151,7 +145,6 @@ body {
   padding: 3px;
   font-size: 10px;
   border: 1px solid grey;
-  /* background-color: rgb(46, 37, 175); */
   background-color: #9d9d9d;
   color: white;
   font-weight: bold;
@@ -184,6 +177,7 @@ h1 > span:hover::after {
 }
 .projects{
   width: 40%;
+  height: max-content;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -289,8 +283,6 @@ h1 > span:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 10px; */
-  /* justify-content: center; */
 }
 .form_container p {
   color: grey;
@@ -312,6 +304,7 @@ textarea {
   margin: 0 auto;
   background-color: #87bcbe;
   color: white;
+  cursor: pointer;
 }
 footer {
   background-color: #051120;
@@ -322,6 +315,7 @@ footer {
   height: max-content;
   width: 100%;
   padding-top: 30px;
+  margin-top:20px;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -356,12 +350,39 @@ footer > div{
 }
 .last_services {
   font-size: 10px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.last_services p{
+  margin: 0 auto;
 }
 .rights {
   color: grey;
   font-size: 10px;
   padding: 0;
   margin-top: 0;
+}
+.rights p{
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-height:1024px){
+  .main{
+    background-image: url(./assets/dev2.jpeg);
+    background-size: cover;
+    height: 40vh;
+  }
+  .projects{
+    grid-auto-rows: min-content;
+  }
+  .project_container > img{
+    height: 30%;
+  }
+  .footer{
+    position: relative;
+    bottom: 0;
+  }
 }
 @media screen and (max-width: 877px) {
   body {
@@ -419,9 +440,7 @@ footer > div{
     align-items: center;
   }
   .navbar img {
-    /* display: none; */
     width: 100px;
-    /* height: 50%; */
   }
   .navElements ul {
     flex-direction: column;
@@ -450,10 +469,6 @@ footer > div{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .main{
-    background-size: cover;
-    height: 50vh;
-  }
   .bg_text{
     width: 90%;
     margin-left: 0;
@@ -478,8 +493,7 @@ footer > div{
     margin: 0;
   }
   .main{
-    background-image: none;
-    background-color: #FEFBF3;
+    background-image: url(./assets/dev2.jpeg);
   }
   .last_services p{
     width: 100%;
@@ -488,10 +502,22 @@ footer > div{
     width: 100%;
   }
 }
+@media screen and (max-width:415px){
+  .projects{
+    row-gap: 15px;
+  }
+}
 @media screen and (max-width:360px){
   .skill_card{
     margin: 0 auto;
   }  
+  .zaid_skills{
+    gap: none;
+    row-gap: 20px;
+  }
+  .projects{
+    row-gap: 15px;
+  }
   .form_container{
     width: 90%;
     margin: 0;
@@ -507,5 +533,19 @@ footer > div{
   }
   footer{
     width: 120%;
+  }
+}
+@media screen and (max-width:320px){
+  .main{
+    background-image: none;
+    height: 60vh;
+  }
+  .bg_text{
+    width: 90%;
+    margin: 0;
+  }
+  .bg_text button{
+    /* margin: 0; */
+    background-color: #79b4b7;
   }
 }
