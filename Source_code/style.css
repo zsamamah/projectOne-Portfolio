@@ -73,7 +73,20 @@ body {
 .navElements a:hover:after {
     width: 100%;
     left: 0;
-  }
+}
+.theme{
+  display: flex;
+  align-items:center; 
+  margin-right: 10px;
+}
+.theme > button{
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+}
+#theme_button > div{
+  display: inline;
+}
 .main {
   background-image: url(./assets/back2.jpg);
   background-size: cover;
@@ -108,7 +121,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-auto-rows: max-content;
   gap: 10px;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
 }
 .skill_card {
   border: 1px solid grey;
@@ -118,9 +131,10 @@ body {
   padding: 2em;
   transition-duration: 0.4s;
 }
-.skill_card > div,
+.skill_card > div:first-child,
 .skill_card > h2 {
-  display: inline;
+  display: block;
+  text-align: center;
 }
 .skill_card:hover {
   background-color: rgb(238, 238, 238);
@@ -192,7 +206,7 @@ h1 > span:hover::after {
   transition-duration: 0.4s;
 }
 .project_container{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 10px;
   overflow: hidden;
 }
@@ -285,7 +299,7 @@ h1 > span:hover::after {
   align-items: center;
 }
 .form_container p {
-  color: grey;
+  /* color: grey; */
   text-align: center;
   font-size: 15px;
 }
@@ -296,6 +310,7 @@ input {
 }
 textarea {
   display: block;
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -479,6 +494,7 @@ footer > div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom:10px;
   }
   .projects{
     width: 60%;
@@ -508,6 +524,9 @@ footer > div{
   }
 }
 @media screen and (max-width:360px){
+  .navbar{
+    padding-bottom: 20px;
+  }
   .skill_card{
     margin: 0 auto;
   }  
