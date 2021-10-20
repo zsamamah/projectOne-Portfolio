@@ -27,6 +27,8 @@ function change_theme() {
 }
 function changeToLight(){
     document.querySelector(".navbar").style.backgroundColor="#79b4b7";
+    document.getElementById("back").style.backgroundImage="url(./assets/back2.jpg)";
+    document.getElementById("hd_text").style.color="black";
     let skills_i=document.querySelectorAll(".skill_card i");
     let title_inner=document.querySelectorAll(".title");
     let title=document.querySelectorAll("h1 > i");
@@ -49,6 +51,8 @@ function changeToLight(){
 }
 function changeToDark(){
     document.querySelector(".navbar").style.backgroundColor="#565656";
+    document.getElementById("back").style.backgroundImage="url(./assets/dev1.jpeg)";
+    document.getElementById("hd_text").style.color="white";
     let skills_i=document.querySelectorAll(".skill_card i");
     let title_inner=document.querySelectorAll(".title");
     let title=document.querySelectorAll("h1 > i");
