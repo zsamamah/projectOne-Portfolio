@@ -389,7 +389,7 @@ footer > div{
 }
 /* testimonials page */
 #testimonial_container{
-  background-image: url(../assets/testimonial_bg.jpg);
+  /* background-image: url(../assets/testimonial_bg.jpg); */
   height: 100vh;
   margin-bottom: 0;
 }
