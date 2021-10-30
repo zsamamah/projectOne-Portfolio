@@ -88,7 +88,7 @@ body {
   display: inline;
 }
 .main {
-  background-image: url(./assets/back2.jpg);
+  background-image: url(../assets/back2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -389,7 +389,7 @@ footer > div{
 }
 /* testimonials page */
 #testimonial_container{
-  background-image: url(./assets/testimonial_bg.jpg);
+  background-image: url(../assets/testimonial_bg.jpg);
   height: 100vh;
   margin-bottom: 0;
 }
@@ -399,7 +399,7 @@ footer > div{
 
 @media screen and (min-height:1024px){
   .main{
-    background-image: url(./assets/dev2.jpeg);
+    background-image: url(../assets/dev2.jpeg);
     background-size: cover;
     height: 40vh;
   }
@@ -457,7 +457,7 @@ footer > div{
 
 @media screen and (max-width: 785px) {
   .main{
-    background-image: url(./assets/dev2.jpeg);
+    background-image: url(../assets/dev2.jpeg);
     background-size: cover;
     height: 50vh;
   }
@@ -524,7 +524,7 @@ footer > div{
     margin: 0;
   }
   .main{
-    background-image: url(./assets/dev2.jpeg);
+    background-image: url(../assets/dev2.jpeg);
   }
   .last_services p{
     width: 100%;

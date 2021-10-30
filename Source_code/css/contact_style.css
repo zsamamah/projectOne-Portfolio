@@ -5,7 +5,7 @@ h1{
     font-size: 1.1em;
 }
 #contact_container{
-    background-image: url(./assets/skills.jpeg);
+    background-image: url(../assets/skills.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 93vh;
