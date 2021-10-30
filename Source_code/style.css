@@ -382,6 +382,11 @@ footer > div{
   margin: 0 auto;
   margin-bottom: 20px;
 }
+/* testimonials page */
+#testimonial_container{
+  background-image: url(./assets/testimonial_bg.jpg);
+  height: 90vh;
+}
 @media screen and (min-height:1024px){
   .main{
     background-image: url(./assets/dev2.jpeg);
