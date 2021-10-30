@@ -14,6 +14,9 @@ form.addEventListener('submit',function(e){
     localStorage.setItem("Email",Email);
     localStorage.setItem("Message",Msg);
     alert("Your message sent successfully!!");
+    form.fname.value="";
+    form.email.value="";
+    form.msg.value="";
   }
   else{
       e.preventDefault();
