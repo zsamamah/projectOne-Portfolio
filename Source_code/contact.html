@@ -13,6 +13,8 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="icon" href="./assets/Zaid-Samamah-logos.jpeg">
 
     <title>Contact Me</title>
 </head>
@@ -20,26 +22,26 @@
     <!-- nav start -->
     <nav class="navbar">
         <div class="logo">
-          <a href="#">
+          <a href="index.html">
             <img src="./assets/Zaid-Samamah-logos_white.webp" alt="Logo" />
           </a>
         </div>
         <div class="navElements">
           <ul>
             <li>
-              <a href="#"><div>Home</div></a>
+              <a href="./index.html"><div>Home</div></a>
             </li>
             <li>
-              <a href="#skills"><div>Skills</div></a>
+              <a href="./index.html#skills"><div>Skills</div></a>
             </li>
             <li>
-              <a href="#projects"><div>Projects</div></a>
+              <a href="./index.html#projects"><div>Projects</div></a>
             </li>
             <li>
-              <a href="./testimonial.html" target="_blank"><div>Testimonials</div></a>
+              <a href="./testimonial.html"><div>Testimonials</div></a>
             </li>
             <li>
-              <a href="./contact.html" target="_blank"><div>Contact me</div></a>
+              <a href="#contact_container"><div>Contact me</div></a>
             </li>
           </ul>
         </div>
@@ -51,8 +53,108 @@
         </div>
       </nav>
     <!-- nav end -->
+
+    <!-- contact start -->
+    <div id="contact_container">
+        <div id="contact_heading">
+        <h1 id="contact" class="title">
+            <i class="far fa-envelope fa-x" style="color: #79b4b7"></i>
+            Get in touch
+        </h1>
+        </div>
+        <div id="contact_section" class="form_container">
+            <p id="my_msg">
+              Have a project for me, or just want to say hi? <br />
+              Feel free to email me at
+              <a href="mailto:zsamamah@yahoo.com" target="_blank">
+                zsamamah@yahoo.com</a
+              >
+              or or use the form below.
+            </p>
+            <form action="#" id="form">
+              <div class="personal_data">
+                <div>
+                  <label for="fname">Full Name:</label><br />
+                  <input type="text" placeholder="Zaid Samamah" id="fname" required/>
+                </div>
+                <div>
+                  <label for="email">Email Address:</label><br />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="username@domain.com" required
+                  />
+                </div>
+              </div>
+              <div id="msg_area">
+                <label for="msg">Your Message:</label>
+              <textarea
+                name="msg"
+                id="msg"
+                cols="50"
+                rows="10"
+                placeholder="Enter your message" required
+              ></textarea>
+            </div>
+            <br>
+              <input type="submit" value="Send" style="width: 30%" class="submit"/>
+            </form>
+        </div>
+    </div>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer id="footer">
+      <div class="social_media">
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/zaid.samamah"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-facebook-square fa-2x facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/zaidsamamah/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin fa-2x linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/zsamamah"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-github-square fa-2x github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCL5UhazjrAJuH2s8ZuGYKRQ/videos"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-youtube fa-2x youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="last_services">
+        <p>Full-Stack development . IT consultant</p>
+      </div>
+      <div class="rights"><p>&copy; Zaid Samamah 2021</p></div>
+    </footer>
+    <!-- footer end -->
     
 
     <script src="script.js"></script>
+    <script src="contact_script.js"></script>
 </body>
 </html>

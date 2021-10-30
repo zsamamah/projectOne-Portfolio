@@ -1,0 +1,29 @@
+h1{
+    margin: 0;
+}
+#my_msg{
+    font-size: 1.1em;
+}
+#contact_container{
+    background-image: url(./assets/skills.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+  }
+  #contact_section{
+    margin-left: 1em;
+  }
+  #contact_section a{
+    color: #0080ff;
+  }
+  #msg_area{
+      padding-left: 0;
+  }
+  #contact_heading{
+      width: 30%;
+  }
